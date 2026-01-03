@@ -712,27 +712,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2884766365486805339, guid: 6c76da9145729014d9191ec9d3c58dac, type: 3}
   m_PrefabInstance: {fileID: 2360492877047184487}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1619371910 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6067849833557402676, guid: 73f0603dbd9984a4db0ddc982f8ef7c6, type: 3}
-  m_PrefabInstance: {fileID: 6617993602927936535}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1619371916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1619371910}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef59ec1efb107114b923515250c91457, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
-  startingState: 1
-  roamingDistanceMax: 7
-  roamingDistanceMin: 3
-  roamingTimeMax: 2
 --- !u!1001 &1935508304
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1160,6 +1139,14 @@ PrefabInstance:
       propertyPath: m_Speed
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6856655408159601334, guid: 73f0603dbd9984a4db0ddc982f8ef7c6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 6856655408159601334, guid: 73f0603dbd9984a4db0ddc982f8ef7c6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 20.32
+      objectReference: {fileID: 0}
     - target: {fileID: 8254977087257877952, guid: 73f0603dbd9984a4db0ddc982f8ef7c6, type: 3}
       propertyPath: m_Name
       value: Slime
@@ -1207,10 +1194,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6067849833557402676, guid: 73f0603dbd9984a4db0ddc982f8ef7c6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1619371916}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73f0603dbd9984a4db0ddc982f8ef7c6, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
