@@ -6,6 +6,7 @@ public class Player : MonoBehaviour {
     public static Player Instance { get; private set; }
 
     [SerializeField] private float standartspeedmul = 5f;
+    Vector2 InputVector;
 
     private Rigidbody2D rb;
 
@@ -16,14 +17,16 @@ public class Player : MonoBehaviour {
         Instance = this;
         rb = GetComponent<Rigidbody2D>();
     }
+
+    private void Update() {
+        InputVector = GameInput.Instance.GetMovementVector();
+    }
+
     private void FixedUpdate() {
-
         HandleMovement();
-
     }
 
     private void HandleMovement() {
-        Vector2 InputVector = GameInput.Instance.GetMovementVector();
         InputVector = InputVector.normalized;
         rb.MovePosition(rb.position + InputVector * (standartspeedmul * Time.fixedDeltaTime));
 
