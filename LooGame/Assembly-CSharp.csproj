@@ -61,12 +61,16 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.3.2f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Sceleton\EnemyAI.cs" />
     <Compile Include="Assets\Scripts\Untils.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerVisual.cs" />
-    <Compile Include="Assets\Scripts\Slime\EnemyAI.cs" />
+    <Compile Include="Assets\Scripts\Weapon\Sword\SwordSlashVisual.cs" />
+    <Compile Include="Assets\Scripts\Weapon\Sword\SwordVisual.cs" />
+    <Compile Include="Assets\Scripts\Weapon\Sword\Sword.cs" />
     <Compile Include="Assets\PlayerActions\PlayerInputActions.cs" />
     <Compile Include="Assets\Scripts\Player\GameInput.cs" />
     <Compile Include="Assets\Scripts\Player\Player.cs" />
+    <Compile Include="Assets\Scripts\Weapon\ActiveWeapon.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

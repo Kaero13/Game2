@@ -13,6 +13,14 @@ public class Player : MonoBehaviour {
     private float minMovingSpeed = 0.1f;
     private bool isRunning = false;
 
+    private void Start() {
+        GameInput.Instance.OnPlayerAttack += Player_OnPlayerAttack;
+    }
+
+    private void Player_OnPlayerAttack(object sender, System.EventArgs e) {
+        ActiveWeapon.Instance.GetActiveWeapon().Attack();
+    }
+
     private void Awake() {
         Instance = this;
         rb = GetComponent<Rigidbody2D>();
